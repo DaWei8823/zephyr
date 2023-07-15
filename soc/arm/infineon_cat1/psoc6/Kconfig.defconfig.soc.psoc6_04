@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: Apache-2.0
+
+
+if SOC_DIE_PSOC6_04
+
+config NUM_IRQS
+	default 16 if CPU_CORTEX_M0PLUS
+	default 175 if CPU_CORTEX_M4
+
+config SOC
+	default "CY8C6244LQI_S4D92" if SOC_CY8C6244LQI_S4D92
+
+
+endif # SOC_DIE_PSOC6_04

@@ -45,7 +45,6 @@ config SOC
 	default "CY8C6148LQI_S2F02" if SOC_CY8C6148LQI_S2F02
 	default "CY8C6244LQI_S4D92" if SOC_CY8C6244LQI_S4D92
 
-
 # add additional die specific params
 
 endif # SOC_DIE_PSOC6_02

@@ -36,12 +36,6 @@
 			write-block-size = <512>;
 			erase-block-size = <512>;
 		};
-		flash1: flash@14000000 {
-			compatible = "soc-nv-flash";
-			reg = <0x14000000 0x0>;
-			write-block-size = <512>;
-			erase-block-size = <512>;
-		};
 	};
 
 	sram0: memory@8000000 {
@@ -186,15 +180,15 @@
 			status = "disabled";
 		};
 
-		adc0: adc@409f0000 {
+		adc0: adc@409B0000 {
 			compatible = "infineon,cat1-adc";
-			reg = <0x409f0000 0x10000>;
+			reg = <0x409B0000 0x10000>;
 			interrupts = <39 6>;
 			status = "disabled";
 		};
-		adc1: adc@409f0000 {
+		adc1: adc@409C0000 {
 			compatible = "infineon,cat1-adc";
-			reg = <0x409f0000 0x10000>;
+			reg = <0x409C0000 0x10000>;
 			interrupts = <40 6>;
 			status = "disabled";
 		};

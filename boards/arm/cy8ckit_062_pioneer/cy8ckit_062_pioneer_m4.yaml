@@ -1,0 +1,19 @@
+#
+# Copyright (c) 2018, Cypress
+# Copyright (c) 2020-2021, ATL Electronics
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+identifier: cy8ckit_062_pioneer_m4
+name: CY8CKIT-062S4 PSoC 62S4
+type: mcu
+arch: arm
+ram: 128
+flash: 256
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+supported:
+  - gpio
