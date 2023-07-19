@@ -1,0 +1,35 @@
+# (c) Meta Platforms, Inc. and affiliates.
+# SPDX-License-Identifier: Apache-2.0
+
+description: NXP CTimer PWM
+
+compatible: "nxp,ctimer-pwm"
+
+include: [pwm-controller.yaml, pinctrl-device.yaml, base.yaml, "nxp,lpc-ctimer.yaml"]
+
+properties:
+  reg:
+    required: true
+
+  prescaler:
+    type: int
+    default: 1
+    description: prescaling value
+
+  period-channel:
+    type: int
+    required: true
+    description: counter for period of pwm signal. must be different than pulse channel
+
+  clk-source:
+    type: int
+    required: true
+    description: clock to use
+
+  "#pwm-cells":
+    const: 3
+
+pwm-cells:
+  - channel
+  - period
+  - flags
