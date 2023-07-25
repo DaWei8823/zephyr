@@ -23,3 +23,10 @@ if(CONFIG_NXP_IMX_RT6XX_BOOT_HEADER)
   zephyr_library_sources(${RT685_BOARD_DIR}/flash_config/flash_config.c)
   zephyr_library_include_directories(${RT685_BOARD_DIR}/flash_config)
 endif()
+
+
+
+zephyr_sources(${ZEPHYR_BASE}/../modules/hal/nxp/mcux/mcux-sdk/drivers/ctimer/fsl_ctimer.c)
+
+zephyr_include_directories(
+    ${ZEPHYR_BASE}/../modules/hal/nxp/mcux/mcux-sdk/drivers/ctimer/)
