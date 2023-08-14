@@ -1,0 +1,7 @@
+tests:
+  drivers.rgb_pwm_leds:
+    build_only: false
+    tags:
+      - drivers
+      - led
+      - pwm

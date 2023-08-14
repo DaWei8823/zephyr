@@ -1,0 +1,8 @@
+/ {
+	rgb {
+		status = "okay";
+		compatible = "rgb-pwm-leds";
+		pwm-leds = <&pwmleds>;
+		init-rgba = [FF FF FF 20];
+	};
+};
