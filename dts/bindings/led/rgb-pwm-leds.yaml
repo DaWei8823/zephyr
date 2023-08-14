@@ -1,0 +1,14 @@
+# (c) Meta Platforms, Inc. and affiliates.
+# SPDX-License-Identifier: Apache-2.0
+
+description: Adds support for color mixing to a  pwm-leds node with a red, green and blue leds
+
+compatible: "rgb-pwm-leds"
+
+properties:
+  pwm-leds:
+    required: true
+    type: phandle
+  init-rgba:
+    type: uint8-array
+    default: [0x7F, 0x7F, 0x7F, 0x7F]

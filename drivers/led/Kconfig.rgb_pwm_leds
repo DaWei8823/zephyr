@@ -1,0 +1,9 @@
+# (c) Meta Platforms, Inc. and affiliates.
+# SPDX-License-Identifier: Apache-2.0
+
+config RGB_PWM_LEDS
+	bool "RGB PWM LED driver"
+	default y
+	depends on LED_PWM && DT_HAS_RGB_PWM_LEDS_ENABLED
+	help
+	  Enable driver for RGB PWM LEDs.
