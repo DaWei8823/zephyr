@@ -34,4 +34,6 @@ config LORA_INIT_PRIORITY
 
 source "drivers/lora/Kconfig.sx12xx"
 
+source "drivers/lora/Kconfig.rylrxxx"
+
 endif # LORA

@@ -48,6 +48,15 @@ uart2: &scb2 {
 	pinctrl-names = "default";
 };
 
+
+uart5: &scb5 {
+    compatible = "infineon,cat1-uart";
+    status = "okay";
+    current-speed = <115200>;
+    pinctrl-0 = <&p5_0_scb5_uart_rx &p5_1_scb5_uart_tx>;
+    pinctrl-names = "default";
+};
+
 &gpio_prt3 {
 	status = "okay";
 };

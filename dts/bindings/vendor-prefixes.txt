@@ -510,6 +510,7 @@ realtek	Realtek Semiconductor Corp.
 remarkable	reMarkable AS
 renesas	Renesas Electronics Corporation
 rex	iMX6 Rex Project
+reyax	Reyax Technology Co., Ltd.
 rervision	Shenzhen Rervision Technology Co., Ltd.
 revotics	Revolution Robotics, Inc. (Revotics)
 richtek	Richtek Technology Corporation
