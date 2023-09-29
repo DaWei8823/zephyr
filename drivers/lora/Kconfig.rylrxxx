@@ -1,0 +1,18 @@
+config LORA_RYLRXXX
+	bool "Reyax LYLR driver"
+	default n
+	depends on DT_HAS_REYAX_RYLRXXX_ENABLED
+	help
+	  Enable the Reyax LYLR driver 
+
+config LORA_RYLRXX_RX_QUEUE_DEPTH
+    int "rylr msg queue depth"
+    default 4
+    help 
+        configure the depth of rylr rx queue
+
+config LORA_RYLRXX_RX_QUEUE_WIDTH
+    int "rylr rx queue width"
+    default 256
+    help
+        Configure the message size in rylr rx queu

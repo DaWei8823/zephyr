@@ -1,0 +1,37 @@
+/*
+ * Copyright (c) 2023 David Ullmann
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/ 
+{
+    aliases {
+        lora0 = &rylr_lora_modem;
+    };
+};
+
+&p2_0_scb1_uart_rx {
+    input-enable;
+};
+
+&p2_1_scb1_uart_tx {
+    drive-push-pull;
+};
+
+uart1: &scb1 {
+    compatible = "infineon,cat1-uart";
+    status = "okay";
+    current-speed = <115200>;
+    pinctrl-0 = <&p2_0_scb1_uart_rx &p2_1_scb1_uart_tx>;
+    pinctrl-names = "default";
+
+    rylr_lora_modem: rylr_lora_modem {
+            compatible = "reyax,rylrxxx";
+            status= "okay";
+    };
+};
+
+
+&gpio_prt2 {
+	status = "okay";
+};

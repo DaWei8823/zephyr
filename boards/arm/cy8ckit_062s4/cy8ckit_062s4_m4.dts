@@ -51,7 +51,3 @@ uart2: &scb2 {
 &gpio_prt3 {
 	status = "okay";
 };
-
-&gpio_prt2 {
-	status = "okay";
-};
